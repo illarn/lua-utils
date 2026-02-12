@@ -38,11 +38,11 @@ function M:get(obj, _seen, _indent, _current_indent)
 	local obj_type = type(obj)
 
 	if obj_type == "nil" then
-		return "null"
+		return "nil"
 	elseif obj_type == "boolean" or obj_type == "number" then
 		return tostring(obj)
 	elseif obj_type == "string" then
-		return s_format("%q", obj)
+		return obj
 	elseif obj_type == "function" then
 		return s_format("<function: %p>", obj)
 	elseif obj_type == "thread" then
