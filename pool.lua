@@ -5,6 +5,10 @@
 ---@field private _pool any[]
 ---@field private _pool_size integer
 local M = {}
+M.mt = {
+	__index = M,
+	__name = "ObjectPool"
+}
 
 ---@param constructor fun(...): any
 ---@param reconstructor? fun(obj: any, ...) executed after the object was taken from the pool
@@ -17,9 +21,7 @@ function M.new(constructor, reconstructor, resetter)
 		_resetter = resetter,
 		_pool = {},
 		_pool_size = 0
-	}, {
-		__index = M
-	})
+	}, mt)
 
 	return t
 end

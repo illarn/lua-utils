@@ -1,4 +1,6 @@
 local s_format = string.format
+local Logger = require("logger")
+local log = Logger.new("WeakReference")
 
 ---@class WeakReference
 ---@field _value {value: any}
