@@ -6,3 +6,4 @@
 - [`stringifier.lua`](stringifier.lua) - generate a readable representation of any lua object
 - [`vararg_concat.lua`](vararg_concat.lua) - build a string without a table
 - [`weak_reference.lua`](weak_reference.lua) - weak reference to a gc'able value with pass-through indexing and calling
+All of the scripts were tested on lua 5.4 and luajit 2.1.1
