@@ -86,6 +86,5 @@ function M.new(name, level)
 end
 
 M.s_main = M.new("Main")
-M.s_main:warn("I am glop gap garolb", {1, 2, 3}, {a = 123, 123})
 
 return M
