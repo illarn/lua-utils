@@ -1,4 +1,4 @@
-# Bunch of lua utility scripts, useful in almost any project
+# Bunch of lua utility scripts, useful in almost any lua project
 - [`class_name.lua`](class_name.lua) - get string class name from a lua object
 - [`deep_copy.lua`](deep_copy.lua)- create a deep copy of a lua table
 - [`logger.lua`](logger.lua) - simple logger with terminal colors
