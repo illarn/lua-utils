@@ -2,7 +2,6 @@ local Stringifier = require("stringifier")
 local stringifier = Stringifier.new(true)
 local t_concat = table.concat
 local t_insert = table.insert
-local stdout = io.stdout
 
 ---@class Logger
 ---@field level LogLevel
@@ -62,8 +61,7 @@ function M:_log(level, ...)
 		"[", os.date("%H:%M:%S" , os.time()), "]", "[", self._name, "]", level_color[self.level], "[", level_name[self.level], "]", Color.RESET, " ", msg
 	}
 
-	stdout:write(t_concat(log_builder))
-	stdout:flush()
+	print(t_concat(log_builder))
 end
 
 M.error = function(self, ...) self:_log(1, ...) end
