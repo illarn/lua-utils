@@ -43,7 +43,7 @@ local level_name = {
 	"WARNING",
 	"INFO",
 	"DEBUG",
-	"RESET"
+	"VERBOSE"
 }
 
 function M:_log(level, ...)
