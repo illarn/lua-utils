@@ -58,17 +58,17 @@ function M:_log(level, ...)
 	local msg = t_concat(msg_builder, ", ")
 
 	local log_builder = {
-		"[", os.date("%H:%M:%S" , os.time()), "]", "[", self._name, "]", level_color[self.level], "[", level_name[self.level], "]", Color.RESET, " ", msg
+		"[", os.date("%H:%M:%S" , os.time()), "]", "[", self._name, "]", level_color[level], "[", level_name[level], "]", Color.RESET, " ", msg
 	}
 
 	print(t_concat(log_builder))
 end
 
-M.error = function(self, ...) self:_log(1, ...) end
-M.warn = function(self, ...) self:_log(2, ...) end
-M.info = function(self, ...) self:_log(3, ...) end
-M.debug = function(self, ...) self:_log(4, ...) end
-M.verbose = function(self, ...) self:_log(5, ...) end
+M.error = function(self, ...) self:_log(M.LogLevel.ERROR, ...) end
+M.warn = function(self, ...) self:_log(M.LogLevel.WARNING, ...) end
+M.info = function(self, ...) self:_log(M.LogLevel.INFO, ...) end
+M.debug = function(self, ...) self:_log(M.LogLevel.DEBUG, ...) end
+M.verbose = function(self, ...) self:_log(M.LogLevel.VERBOSE, ...) end
 
 ---@param name string
 ---@param level? LogLevel
