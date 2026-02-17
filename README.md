@@ -12,5 +12,5 @@ All of the scripts were tested on lua 5.4.3 and luajit 2.1.1
 ## Installation
 [Luarocks](https://luarocks.org/modules/illarn/illarn-utils)
 ```bash
-luarocks install illarn-tween
+luarocks install illarn-utils
 ```
