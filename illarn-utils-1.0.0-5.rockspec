@@ -1,5 +1,5 @@
 package = "illarn-utils"
-version = "1.0.0-1"
+version = "1.0.0-5"
 source = {
    url = "git+https://github.com/illarn/lua-utils.git"
 }
@@ -17,12 +17,12 @@ dependencies = {
 build = {
    type = "builtin",
    modules = {
-      class_name = "class_name.lua",
-      deep_copy = "deep_copy.lua",
-      logger = "logger.lua",
-      pool = "pool.lua",
-      stringifier = "stringifier.lua",
-      vararg_concat = "vararg_concat.lua",
-      weak_reference = "weak_reference.lua"
+      ["illarn-utils.class_name"] = "src/class_name.lua",
+      ["illarn-utils.deep_copy"] = "src/deep_copy.lua",
+      ["illarn-utils.logger"] = "src/logger.lua",
+      ["illarn-utils.pool"] = "src/pool.lua",
+      ["illarn-utils.stringifier"] = "src/stringifier.lua",
+      ["illarn-utils.vararg_concat"] = "src/vararg_concat.lua",
+      ["illarn-utils.weak_reference"] = "src/weak_reference.lua"
    }
 }
