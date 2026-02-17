@@ -1,5 +1,5 @@
 local s_format = string.format
-local Logger = require("logger")
+local Logger = require("illarn.logger")
 local log = Logger.new("WeakReference")
 
 ---@class WeakReference

@@ -1,4 +1,4 @@
-local Stringifier = require("stringifier")
+local Stringifier = require("illarn.stringifier")
 local stringifier = Stringifier.new(true)
 local t_concat = table.concat
 local t_insert = table.insert
