@@ -1,5 +1,5 @@
 # Bunch of lua utility scripts, useful in almost any lua project
-- [`illar.class_name.lua`](illarn/class_name.lua) - get string class name from a lua object
+- [`illarn.class_name.lua`](illarn/class_name.lua) - get string class name from a lua object
 - [`illarn.deep_copy.lua`](illarn/deep_copy.lua)- create a deep copy of a lua table
 - [`illarn.logger.lua`](illarn/logger.lua) - simple logger with terminal colors
 - [`illarn.pool.lua`](illarn/pool.lua) - object pooling
