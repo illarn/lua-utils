@@ -13,6 +13,14 @@ M.mt = {
 		end
 		return obj[key]
 	end,
+	__newindex = function(self, key, value)
+		local obj = self:get()
+		if not obj then
+			log:error("Trying to modify dead weak reference " .. tostring(self))
+			return
+		end
+		obj[key] = value
+	end,
 	__call = function(self, ...)
 		local obj = self:get()
 		if not obj then
