@@ -6,6 +6,7 @@
 - [`illarn.stringifier`](illarn/stringifier.lua) - generate a readable representation of any lua object
 - [`illarn.vararg_concat`](illarn/vararg_concat.lua) - build a string without a table
 - [`illarn.weak_reference`](illarn/weak_reference.lua) - weak reference to a gc'able value with pass-through indexing and calling
+- ['illarn.callable'](illarn/callable.lua) - functions with pre-placed arguments
 
 All of the scripts were tested on lua 5.4.3 and luajit 2.1.1
 
